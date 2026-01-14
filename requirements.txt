@@ -1,0 +1,25 @@
+# Paper Storyteller - Claude Code Skill
+# 使用 PaddleOCR 提取论文结构图，生成带图片的网页
+
+# ArXiv
+arxiv==2.1.0
+
+# PDF processing
+PyPDF2==3.0.1
+PyMuPDF==1.23.8
+
+# PaddleOCR for figure extraction
+paddleocr==2.7.3
+paddlepaddle==2.6.0
+
+# Image processing
+opencv-python==4.9.0.80
+Pillow==10.2.0
+numpy==1.24.3
+
+# Google Gemini API
+google-generativeai==0.3.2
+
+# Utilities
+python-dotenv==1.0.0
+loguru==0.7.2

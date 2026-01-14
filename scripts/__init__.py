@@ -1,0 +1,1 @@
+# Paper Storyteller - Core Scripts
