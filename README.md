@@ -1,6 +1,7 @@
 # Paper Storyteller
 
 > 将 arXiv 上的深度学习相关的论文，转换为精美的故事化讲解网页，本工程基于Vibe Coding制作；Cursor + Opus 4.5 model;
+> 有问题欢迎提issue；
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -39,7 +40,7 @@ GOOGLE_API_KEY=your_gemini_api_key
 
 ```bash
 # 使用 arXiv 链接
-python paper_storyteller_skill.py https://arxiv.org/abs/2311.14405
+python paper_storyteller_skill.py https://arxiv.org/abs/2312.10035
 
 # 使用 arXiv ID
 python paper_storyteller_skill.py 2311.14405
