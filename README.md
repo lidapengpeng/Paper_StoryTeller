@@ -29,14 +29,30 @@ cd Paper_StoryTeller
 pip install -r requirements.txt
 ```
 
-### 3. 下载模型（首次使用）
+### 3. 下载模型（首次使用，约 204MB）
 
 ```bash
-# 下载 PaddleOCR 布局检测模型（约 200MB）
-git clone https://huggingface.co/PaddlePaddle/PaddleOCR-VL models/PaddleOCR-VL
+# 创建模型目录
+mkdir -p models/PaddleOCR-VL/PP-DocLayoutV2
+cd models/PaddleOCR-VL/PP-DocLayoutV2
+
+# 下载 3 个必需文件
+wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams
+wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel
+wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml
+
+cd ../../..
 ```
 
-> ⚠️ 如果 HuggingFace 访问慢，可使用镜像：`https://hf-mirror.com/PaddlePaddle/PaddleOCR-VL`
+<details>
+<summary>💡 Windows 用户或下载慢？</summary>
+
+直接浏览器下载这 3 个文件，放到 `models/PaddleOCR-VL/PP-DocLayoutV2/` 目录：
+- [inference.pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams) (202MB)
+- [inference.pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel) (1.4MB)
+- [inference.yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml) (1.5KB)
+
+</details>
 
 ### 4. 运行
 
@@ -103,10 +119,12 @@ Paper-Storyteller/
 <details>
 <summary><b>报错"模型文件缺失"？</b></summary>
 
-请先下载模型：
-```bash
-git clone https://huggingface.co/PaddlePaddle/PaddleOCR-VL models/PaddleOCR-VL
-```
+确保 `models/PaddleOCR-VL/PP-DocLayoutV2/` 目录下有这 3 个文件：
+- `inference.pdiparams`
+- `inference.pdmodel`
+- `inference.yml`
+
+参考上方"下载模型"步骤。
 </details>
 
 <details>
