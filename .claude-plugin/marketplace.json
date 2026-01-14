@@ -1,0 +1,15 @@
+{
+  "name": "dapengpeng-plugins",
+  "description": "Dapengpeng 的 Claude Code 插件集合",
+  "author": "Dapengpeng",
+  "plugins": [
+    {
+      "name": "paper-storyteller",
+      "version": "1.0.0",
+      "description": "将 arXiv 神经网络论文转换为精美的故事化讲解网页",
+      "repository": "https://github.com/lidapengpeng/Paper_StoryTeller",
+      "keywords": ["arxiv", "论文", "AI", "深度学习"],
+      "author": "Dapengpeng"
+    }
+  ]
+}
