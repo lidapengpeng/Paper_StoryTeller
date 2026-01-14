@@ -23,13 +23,27 @@ git clone https://github.com/lidapengpeng/Paper_StoryTeller.git
 cd Paper_StoryTeller
 ```
 
-### 2. 安装依赖
+### 2. 创建环境（推荐）
 
 ```bash
+# 创建 conda 环境
+conda create -n paper_storyteller python=3.10 -y
+conda activate paper_storyteller
+
+# 安装依赖
 pip install -r requirements.txt
 ```
 
-### 3. 下载模型（首次使用，约 204MB）
+<details>
+<summary>💡 不使用 conda？</summary>
+
+直接安装依赖：
+```bash
+pip install -r requirements.txt
+```
+</details>
+
+### 3. 下载模型（约 204MB）
 
 ```bash
 # 创建模型目录
