@@ -29,28 +29,20 @@ cd Paper_StoryTeller
 pip install -r requirements.txt
 ```
 
-### 3. 配置 API Key
+### 3. 运行
 
 ```bash
-# Linux/Mac
-export GOOGLE_API_KEY="your_gemini_api_key"
+# 直接传入 API Key
+python paper_storyteller_skill.py https://arxiv.org/abs/2311.14405 --api-key YOUR_GEMINI_API_KEY
 
-# Windows PowerShell
-$env:GOOGLE_API_KEY="your_gemini_api_key"
+# 或使用 arXiv ID
+python paper_storyteller_skill.py 2311.14405 --api-key YOUR_GEMINI_API_KEY
+
+# 生成英文版本
+python paper_storyteller_skill.py 2311.14405 --lang en --api-key YOUR_GEMINI_API_KEY
 ```
 
-### 4. 运行
-
-```bash
-# 使用 arXiv 链接
-python paper_storyteller_skill.py https://arxiv.org/abs/2311.14405
-
-# 使用 arXiv ID
-python paper_storyteller_skill.py 2311.14405
-
-# 指定语言（默认中文）
-python paper_storyteller_skill.py 2311.14405 --lang en
-```
+> 💡 **API Key 获取**：访问 https://ai.google.dev/ 获取免费的 Gemini API Key
 
 ## 📄 输出内容
 
