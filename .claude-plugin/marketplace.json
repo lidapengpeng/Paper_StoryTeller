@@ -1,18 +1,23 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dapengpeng-plugins",
   "version": "1.0.0",
   "description": "Dapengpeng 的 Claude Code 插件集合",
   "owner": {
     "name": "Dapengpeng",
-    "email": "hellodapengya@gmail.com",
-    "url": "https://github.com/lidapengpeng"
+    "email": "hellodapengya@gmail.com"
   },
   "plugins": [
     {
       "name": "paper-storyteller",
-      "version": "1.0.0",
       "description": "将 arXiv 神经网络论文转换为精美的故事化讲解网页",
-      "source": "https://github.com/lidapengpeng/Paper_StoryTeller"
+      "version": "1.0.0",
+      "author": {
+        "name": "Dapengpeng",
+        "email": "hellodapengya@gmail.com"
+      },
+      "source": "./",
+      "category": "productivity"
     }
   ]
 }

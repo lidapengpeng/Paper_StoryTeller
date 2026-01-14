@@ -2,31 +2,10 @@
   "name": "paper-storyteller",
   "version": "1.0.0",
   "description": "将 arXiv 神经网络论文转换为精美的故事化讲解网页。自动提取论文的网络架构图，使用 Gemini AI 生成通俗易懂的中文讲解。",
-  "author": "Dapengpeng",
-  "repository": "https://github.com/lidapengpeng/Paper_StoryTeller",
-  "license": "MIT",
-  "keywords": [
-    "arxiv",
-    "论文讲解",
-    "paper",
-    "storyteller",
-    "AI",
-    "深度学习",
-    "网络架构图"
-  ],
-  "triggers": [
-    "arxiv",
-    "论文讲解",
-    "paper storyteller",
-    "生成论文网页",
-    "提取架构图",
-    "解读论文"
-  ],
-  "requirements": {
-    "python": ">=3.8",
-    "api_keys": ["GOOGLE_API_KEY"]
+  "author": {
+    "name": "Dapengpeng",
+    "email": "hellodapengya@gmail.com"
   },
-  "commands": [
-    "paper-storyteller"
-  ]
+  "repository": "https://github.com/lidapengpeng/Paper_StoryTeller",
+  "license": "MIT"
 }
