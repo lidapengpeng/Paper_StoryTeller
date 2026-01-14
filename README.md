@@ -62,9 +62,9 @@ cd ../../..
 <summary>💡 Windows 用户或下载慢？</summary>
 
 直接浏览器下载这 3 个文件，放到 `models/PaddleOCR-VL/PP-DocLayoutV2/` 目录：
-- [inference.pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams) (202MB)
-- [inference.pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel) (1.4MB)
-- [inference.yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml) (1.5KB)
+- [inference.pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams?download=true) (202MB)
+- [inference.pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel?download=true) (1.4MB)
+- [inference.yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml?download=true) (1.5KB) - 点击后 Ctrl+S 保存
 
 </details>
 
