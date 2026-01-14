@@ -29,6 +29,8 @@ env/
 # Environment variables
 .env
 .env.local
+# But allow .env.example
+!.env.example
 
 # IDE
 .vscode/
