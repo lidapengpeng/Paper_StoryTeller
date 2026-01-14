@@ -57,8 +57,7 @@ logs/
 *.key
 
 # Large model files (download separately)
-models/
-!models/.gitkeep
+model/
 
 # Generated content
 examples/sample_output/*.html

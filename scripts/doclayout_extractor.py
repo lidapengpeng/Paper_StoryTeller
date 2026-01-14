@@ -1,5 +1,5 @@
 """
-DocLayout Extractor - 基于 PaddleOCR-VL PP-DocLayoutV2 的论文图像提取器
+DocLayout Extractor - 基于 PP-DocLayoutV2 的论文图像提取器
 
 功能：
 - 使用 PP-DocLayoutV2 检测 PDF 中的 image 区域
@@ -7,8 +7,8 @@ DocLayout Extractor - 基于 PaddleOCR-VL PP-DocLayoutV2 的论文图像提取�
 - 优先选择第 2-3 页的大图（通常是架构图）
 
 模型要求：
-- 需要下载 PaddleOCR-VL 模型到 models/PaddleOCR-VL/
-- 包含 PP-DocLayoutV2 子目录（inference.pdmodel / inference.pdiparams / inference.yml）
+- 需要下载模型文件到 model/ 目录
+- 包含 3 个文件：inference.pdmodel / inference.pdiparams / inference.yml
 """
 
 import os
@@ -25,7 +25,7 @@ from loguru import logger
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 
 # 默认模型路径
-DEFAULT_MODEL_DIR = "models/PaddleOCR-VL/PP-DocLayoutV2"
+DEFAULT_MODEL_DIR = "model"
 
 
 class DocLayoutExtractor:
@@ -57,7 +57,7 @@ class DocLayoutExtractor:
             if missing:
                 raise FileNotFoundError(
                     f"模型文件缺失: {missing}\n"
-                    f"请从 HuggingFace 下载 PaddleOCR-VL 到 {self.model_dir.parent}"
+                    f"请下载模型文件到 {self.model_dir}/ 目录，参考 README.md"
                 )
 
             logger.info(f"初始化 LayoutDetection (本地 PP-DocLayoutV2)...")

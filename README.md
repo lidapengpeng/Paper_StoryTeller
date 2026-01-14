@@ -46,22 +46,18 @@ pip install -r requirements.txt
 ### 3. 下载模型（约 204MB）
 
 ```bash
-# 创建模型目录
-mkdir -p models/PaddleOCR-VL/PP-DocLayoutV2
-cd models/PaddleOCR-VL/PP-DocLayoutV2
-
-# 下载 3 个必需文件
+# 创建模型目录并下载
+mkdir model && cd model
 wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams
 wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel
 wget https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml
-
-cd ../../..
+cd ..
 ```
 
 <details>
 <summary>💡 Windows 用户或下载慢？</summary>
 
-直接浏览器下载这 3 个文件，放到 `models/PaddleOCR-VL/PP-DocLayoutV2/` 目录：
+创建 `model/` 文件夹，下载这 3 个文件放入：
 - [inference.pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams?download=true) (202MB)
 - [inference.pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel?download=true) (1.4MB)
 - [inference.yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml?download=true) (1.5KB) - 点击后 Ctrl+S 保存
@@ -133,7 +129,7 @@ Paper-Storyteller/
 <details>
 <summary><b>报错"模型文件缺失"？</b></summary>
 
-确保 `models/PaddleOCR-VL/PP-DocLayoutV2/` 目录下有这 3 个文件：
+确保 `model/` 目录下有这 3 个文件：
 - `inference.pdiparams`
 - `inference.pdmodel`
 - `inference.yml`
