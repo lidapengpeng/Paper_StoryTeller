@@ -57,10 +57,15 @@ cd ..
 <details>
 <summary>💡 Windows 用户或下载慢？</summary>
 
-创建 `model/` 文件夹，下载这 3 个文件放入：
-- [inference.pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams?download=true) (202MB)
-- [inference.pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel?download=true) (1.4MB)
-- [inference.yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml?download=true) (1.5KB) - 点击后 Ctrl+S 保存
+创建 `model/` 文件夹，下载这 3 个文件放入（**注意保存时文件名要正确**）：
+
+| 下载链接 | 保存为 | 大小 |
+|---------|--------|------|
+| [下载 pdiparams](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdiparams?download=true) | `inference.pdiparams` | 202MB |
+| [下载 pdmodel](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.pdmodel?download=true) | `inference.pdmodel` | 1.4MB |
+| [下载 yml](https://huggingface.co/PaddlePaddle/PaddleOCR-VL/resolve/main/PP-DocLayoutV2/inference.yml?download=true) | `inference.yml` | 1.5KB |
+
+> ⚠️ 保存 yml 文件时，浏览器可能显示错误文件名，请手动改为 `inference.yml`
 
 </details>
 
