@@ -1,10 +1,15 @@
-# Paper Storyteller
+# Paper Storyteller 📖✨
 
-> 将 arXiv 上的深度学习相关的论文，转换为精美的故事化讲解网页，本工程基于Vibe Coding制作；Cursor + Opus 4.5 model;
-> 有问题欢迎提issue；
+> 🔥 **3 分钟读懂一篇 arXiv 论文** - 将深度学习论文转换为精美的故事化讲解网页
+> 
+> 本工程基于 Vibe Coding 制作；Cursor + Claude Opus 4.5
+> 
+> ⭐ **如果觉得有用，请给个 Star！** 有问题欢迎提 issue
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/lidapengpeng/Paper_StoryTeller?style=social)](https://github.com/lidapengpeng/Paper_StoryTeller)
+[![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-Plugin-blueviolet)](https://github.com/lidapengpeng/Paper_StoryTeller)
 
 ## 功能特点
 
