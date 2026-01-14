@@ -15,11 +15,43 @@
 
 ## 快速开始
 
+### 0. 环境检查（推荐）
+
+```bash
+# 运行环境检查脚本，确认所有依赖是否正确安装
+python setup.py
+```
+
 ### 1. 安装依赖
 
 ```bash
+# 安装基础依赖
 pip install -r requirements.txt
+
+# ⚠️ 如果 PaddlePaddle 安装失败，请参考官方文档：
+# https://www.paddlepaddle.org.cn/install/quick
 ```
+
+<details>
+<summary>💡 常见安装问题</summary>
+
+**Mac M1/M2 用户：**
+```bash
+# 使用 conda 安装
+conda install paddlepaddle -c paddle
+```
+
+**Windows 用户：**
+- 确保已安装 Visual C++ Build Tools
+- 如遇到问题，尝试 `pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple`
+
+**GPU 用户：**
+```bash
+# 替换 paddlepaddle 为 GPU 版本
+pip install paddlepaddle-gpu
+```
+
+</details>
 
 ### 2. 配置 API Key
 
@@ -106,6 +138,48 @@ paper-storyteller/
 - Python 3.8+
 - CUDA（可选，GPU 加速）
 - 约 500MB 磁盘空间（模型文件）
+- Gemini API Key（从 https://ai.google.dev/ 获取）
+
+## 常见问题 FAQ
+
+<details>
+<summary><b>Q: 首次运行很慢？</b></summary>
+
+首次运行时会自动下载 PaddleOCR 模型（约 200MB），请耐心等待。
+下载完成后会缓存到 `models/` 目录，后续运行会很快。
+
+</details>
+
+<details>
+<summary><b>Q: 报错 "模型文件缺失"？</b></summary>
+
+手动下载模型：
+```bash
+git clone https://huggingface.co/PaddlePaddle/PaddleOCR-VL models/PaddleOCR-VL
+```
+
+</details>
+
+<details>
+<summary><b>Q: PaddlePaddle 安装失败？</b></summary>
+
+参考官方安装指南：https://www.paddlepaddle.org.cn/install/quick
+
+或使用 conda：
+```bash
+conda install paddlepaddle -c paddle
+```
+
+</details>
+
+<details>
+<summary><b>Q: API 调用报错？</b></summary>
+
+1. 确认 API Key 正确设置
+2. 确认 Gemini API 有访问权限（部分地区可能需要代理）
+3. 检查 API 配额是否用尽
+
+</details>
 
 ## 许可证
 

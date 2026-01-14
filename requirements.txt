@@ -9,8 +9,9 @@ PyPDF2==3.0.1
 PyMuPDF==1.23.8
 
 # PaddleOCR for figure extraction
-paddleocr==2.7.3
-paddlepaddle==2.6.0
+# 注意：PaddlePaddle 安装可能需要特定版本，参考 https://www.paddlepaddle.org.cn/install/
+paddleocr>=2.7.0
+paddlepaddle>=2.5.0  # CPU 版本，GPU 用户请安装 paddlepaddle-gpu
 
 # Image processing
 opencv-python==4.9.0.80
@@ -18,7 +19,8 @@ Pillow==10.2.0
 numpy==1.24.3
 
 # Google Gemini API
-google-generativeai==0.3.2
+google-generativeai>=0.8.0
+google-genai>=1.0.0
 
 # Utilities
 python-dotenv==1.0.0
