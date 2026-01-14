@@ -29,7 +29,16 @@ cd Paper_StoryTeller
 pip install -r requirements.txt
 ```
 
-### 3. 运行
+### 3. 下载模型（首次使用）
+
+```bash
+# 下载 PaddleOCR 布局检测模型（约 200MB）
+git clone https://huggingface.co/PaddlePaddle/PaddleOCR-VL models/PaddleOCR-VL
+```
+
+> ⚠️ 如果 HuggingFace 访问慢，可使用镜像：`https://hf-mirror.com/PaddlePaddle/PaddleOCR-VL`
+
+### 4. 运行
 
 ```bash
 # 直接传入 API Key
@@ -92,8 +101,12 @@ Paper-Storyteller/
 ## ❓ 常见问题
 
 <details>
-<summary><b>首次运行很慢？</b></summary>
-首次运行会自动下载 PaddleOCR 模型（约 200MB），请耐心等待。
+<summary><b>报错"模型文件缺失"？</b></summary>
+
+请先下载模型：
+```bash
+git clone https://huggingface.co/PaddlePaddle/PaddleOCR-VL models/PaddleOCR-VL
+```
 </details>
 
 <details>
