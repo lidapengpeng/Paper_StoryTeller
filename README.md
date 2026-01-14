@@ -1,6 +1,6 @@
 # Paper Storyteller
 
-> 将 arXiv 神经网络论文转换为精美的故事化讲解网页
+> 将 arXiv 上的深度学习相关的论文，转换为精美的故事化讲解网页，本工程基于Vibe Coding制作；Cursor + Opus 4.5 model;
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
